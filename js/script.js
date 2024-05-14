@@ -6,7 +6,7 @@ document.querySelector("#addTask").addEventListener("click", () => {
     <div class="flex">
         <div class="left">
             <div class="pe-1">
-                <button class="btn btn-black-backround p-1 pe-2 ps-2">
+                <button class="btn btn-dark p-1 pe-2 ps-2">
                     <small><i class="fa-solid fa-check"></i></small>
                 </button>
             </div>

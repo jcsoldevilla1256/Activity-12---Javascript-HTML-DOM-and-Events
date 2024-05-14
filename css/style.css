@@ -3,11 +3,6 @@ html {
     margin: auto;
 }
 
-.btn-black-backround {
-    background-color: rgb(47, 47, 47);
-    color: white;
-}
-
 .flex {
     display: flex;
 }
