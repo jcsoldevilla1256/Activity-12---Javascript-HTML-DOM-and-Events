@@ -1,0 +1,9 @@
+html {
+    width: 80%;
+    margin: auto;
+}
+
+.btn-black-backround {
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
