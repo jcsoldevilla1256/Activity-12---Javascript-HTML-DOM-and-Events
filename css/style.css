@@ -7,3 +7,11 @@ html {
     background-color: rgb(47, 47, 47);
     color: white;
 }
+
+.flex {
+    display: flex;
+}
+
+.left {
+    display: flex;
+}
