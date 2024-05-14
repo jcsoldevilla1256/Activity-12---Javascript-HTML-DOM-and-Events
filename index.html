@@ -19,28 +19,32 @@
   </head>
   <body>
     <div class="card shadow-sm mt-5 p-4">
-          <h1 class="mb-3">📝 To-do List</h1>
-          <p class="mb-0"><small>Write a new to-do list</small></p>
-      <form>
-        <div class="row">
-          <div class="col-sm-10 mb-2">
-            <input
-              type="text"
-              class="form-control"
-              id="taskInput"
-              aria-describedby="emailHelp" />
-          </div>
-          <div class="col-sm-2">
-            <button
-              type="submit"
-              id="addTask"
-              class="btn btn-black-backround text-nowrap p-1 pe-2 ps-2">
-              <small>+ Task</small>
-            </button>
-          </div>
-        </div>
-      </form>
 
+      <header>
+        <h1 class="mb-3">📝 To-do List</h1>
+      </header>
+
+      <main>
+        <!-- FORMS -->
+      <p class="mb-0"><small>Write a new to-do list</small></p>
+      <div class="row">
+        <div class="col-sm-10 mb-2">
+          <input
+            type="text"
+            class="form-control"
+            id="taskInput"
+            aria-describedby="emailHelp" />
+        </div>
+        <div class="col-sm-2">
+          <button
+            id="addTask"
+            class="btn btn-black-backround text-nowrap p-1 pe-2 ps-2">
+            <small>+ Task</small>
+          </button>
+        </div>
+      </div>
+      
+        <!-- TASK AREA -->
       <div id="taskArea">
         <hr />
         <div class="flex">
@@ -81,6 +85,7 @@
         </div>
       </div>
     </div>
+</main>
 
     <footer class="text-center mt-2 text-secondary">
       <small>Developed by <strong>John Carlos Soldevilla</strong></small>
