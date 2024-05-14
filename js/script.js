@@ -24,6 +24,6 @@ document.querySelector("#addTask").addEventListener("click", () => {
     </div>`;
     document.querySelector("#taskInput").value = "";
   } else {
-    alert("Field cannot be empty. I love you.")
+    alert("Field cannot be empty. 😊")
   }
 });
