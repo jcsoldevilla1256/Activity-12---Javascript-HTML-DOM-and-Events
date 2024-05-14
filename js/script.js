@@ -1,7 +1,7 @@
 document.querySelector("#addTask").addEventListener("click", () => {
   //   Just a space
 
-  if (document.querySelector("#taskInput".value !== "")) {
+  if (document.querySelector("#taskInput").value !== "") {
     document.querySelector("#taskArea").innerHTML += `<hr />
     <div class="flex">
         <div class="left">
