@@ -1,6 +1,8 @@
 document.querySelector("#addTask").addEventListener("click", () => {
-    document.querySelector("#taskArea").innerHTML += 
-    `<hr />
+  //   Just a space
+
+  if (document.querySelector("#taskInput".value !== "")) {
+    document.querySelector("#taskArea").innerHTML += `<hr />
     <div class="flex">
         <div class="left">
             <div class="pe-1">
@@ -15,9 +17,13 @@ document.querySelector("#addTask").addEventListener("click", () => {
             </div>
         </div>
         <div class="right">
-            <p class="pb-0 mb-0">${document.querySelector("#taskInput").value}</p>
+            <p class="pb-0 mb-0">${
+              document.querySelector("#taskInput").value
+            }</p>
         </div>
     </div>`;
     document.querySelector("#taskInput").value = "";
+  } else {
+    alert("Field cannot be empty. I love you.")
+  }
 });
-
