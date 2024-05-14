@@ -6,7 +6,7 @@ document.querySelector("#addTask").addEventListener("click", () => {
     <div class="flex">
         <div class="left">
             <div class="pe-1">
-                <button class="btn btn-dark p-1 pe-2 ps-2">
+                <button class="markButton btn btn-dark p-1 pe-2 ps-2">
                     <small><i class="fa-solid fa-check"></i></small>
                 </button>
             </div>
@@ -24,6 +24,15 @@ document.querySelector("#addTask").addEventListener("click", () => {
     </div>`;
     document.querySelector("#taskInput").value = "";
   } else {
-    alert("Field cannot be empty. 😊")
+    alert("Field cannot be empty. 😊");
   }
+
+  const markButtons = document.querySelectorAll(".markButton");
+  markButtons.forEach((markButton) => {
+    markButton.addEventListener("click", (e) => {
+        e.target.parentElement.lastElementChild.style = "text-decoration: line-through;" ;
+    })
+  });
 });
+
+// how to select an element that is not a child elemet of parent element? 
