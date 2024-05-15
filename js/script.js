@@ -1,5 +1,6 @@
+
+
 document.querySelector("#addTask").addEventListener("click", () => {
-  //   Just a space
 
   if (document.querySelector("#taskInput").value !== "") {
     document.querySelector("#taskArea").innerHTML += `<hr />
@@ -17,7 +18,7 @@ document.querySelector("#addTask").addEventListener("click", () => {
             </div>
         </div>
         <div class="right">
-            <p class="pb-0 mb-0">${
+            <p class="pb-0 mb-0 slash">${
               document.querySelector("#taskInput").value
             }</p>
         </div>
@@ -30,7 +31,7 @@ document.querySelector("#addTask").addEventListener("click", () => {
   const markButtons = document.querySelectorAll(".markButton");
   markButtons.forEach((markButton) => {
     markButton.addEventListener("click", (e) => {
-        e.target.parentElement.lastElementChild.style = "text-decoration: line-through;" ;
+        e.target.parentElement.parentElement.parentElement.lastElementChild.style = "text-decoration: line-through;" ;
     })
   });
 });
