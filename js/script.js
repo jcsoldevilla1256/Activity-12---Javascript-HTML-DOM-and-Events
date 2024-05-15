@@ -41,7 +41,7 @@ document.querySelector("#addTask").addEventListener("click", () => {
   const deleteButtons = document.querySelectorAll(".deleteButton");
   deleteButtons.forEach((deleteButton) => {
     deleteButton.addEventListener("click", (e) => {
-        e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
+        e.target.parentElement.parentElement.parentElement.parentElement.remove();
     })
   });
 });
