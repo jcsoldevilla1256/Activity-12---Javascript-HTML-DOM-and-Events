@@ -35,14 +35,14 @@ document.querySelector("#addTask").addEventListener("click", () => {
   markButtons.forEach((markButton) => {
     markButton.addEventListener("click", (e) => {
         e.target.parentElement.parentElement.parentElement.lastElementChild.style = "text-decoration: line-through;" ;
-    })
-  });
+    });
+  });W
 
   const deleteButtons = document.querySelectorAll(".deleteButton");
   deleteButtons.forEach((deleteButton) => {
     deleteButton.addEventListener("click", (e) => {
-        e.target.parentElement.parentElement.parentElement.parentElement.remove();
-    })
+        e.target.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.remove();
+    });
   });
 });
 
