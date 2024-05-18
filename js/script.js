@@ -34,7 +34,7 @@ document.querySelector("#addTask").addEventListener("click", () => {
   const markButtons = document.querySelectorAll(".markButton");
   markButtons.forEach((markButton) => {
     markButton.addEventListener("click", (e) => {
-        e.target.parentElement.parentElement.parentElement.lastElementChild.style = "text-decoration: line-through;" ;
+        e.target.closest('.task').querySelector('.slash').style = "text-decoration: line-through;" ;
     });
   });
 
