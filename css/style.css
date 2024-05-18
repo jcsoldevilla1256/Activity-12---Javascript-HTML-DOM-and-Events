@@ -1,18 +1,18 @@
 html {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .left {
-    display: flex;
+  display: flex;
 }
 
 @media only screen and (max-width: 500px) {
-    #addTask {
-        width: 100%;
-    }
+  #addTask {
+    width: 100%;
   }
+}
