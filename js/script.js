@@ -32,7 +32,7 @@ document.querySelector("#addTask").addEventListener("click", () => {
   markButtons.forEach((markButton) => {
     markButton.addEventListener("click", (e) => {
       e.target.closest(".task").querySelector(".slash").style =
-        "text-decoration: line-through;";
+        "text-decoration: line-through; color:green;";
     });
   });
 
