@@ -1,7 +1,4 @@
-
-
 document.querySelector("#addTask").addEventListener("click", () => {
-
   if (document.querySelector("#taskInput").value !== "") {
     document.querySelector("#taskArea").innerHTML += `
     <div class="task">
@@ -34,16 +31,15 @@ document.querySelector("#addTask").addEventListener("click", () => {
   const markButtons = document.querySelectorAll(".markButton");
   markButtons.forEach((markButton) => {
     markButton.addEventListener("click", (e) => {
-        e.target.closest('.task').querySelector('.slash').style = "text-decoration: line-through;" ;
+      e.target.closest(".task").querySelector(".slash").style =
+        "text-decoration: line-through;";
     });
   });
 
   const deleteButtons = document.querySelectorAll(".deleteButton");
   deleteButtons.forEach((deleteButton) => {
     deleteButton.addEventListener("click", (e) => {
-        e.target.closest('.task').remove();
+      e.target.closest(".task").remove();
     });
   });
 });
-
-// how to select an element that is not a child elemet of parent element? 
