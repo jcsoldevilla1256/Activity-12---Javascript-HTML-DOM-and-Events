@@ -4,7 +4,7 @@ document.querySelector("#addTask").addEventListener("click", () => {
 
   if (document.querySelector("#taskInput").value !== "") {
     document.querySelector("#taskArea").innerHTML += `
-    <div>
+    <div class="task">
     <hr />
     <div class="flex">
         <div class="left">
@@ -41,7 +41,7 @@ document.querySelector("#addTask").addEventListener("click", () => {
   const deleteButtons = document.querySelectorAll(".deleteButton");
   deleteButtons.forEach((deleteButton) => {
     deleteButton.addEventListener("click", (e) => {
-        e.target.parentElement.parentElement.parentElement.parentElement.remove();
+        e.target.closest('.task').remove();
     });
   });
 });
